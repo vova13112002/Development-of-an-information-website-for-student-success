@@ -59,15 +59,15 @@ function watching() {
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
   watch(['app/*.html']).on('change', browserSync.reload);
 }
-gulp.task('css', function(){
-  return gulp.scr([
-    // 'node_modules/normalize.css/normalize.css',
-    'node_modules/slick-carousel/slick/slick.css',
-  ])
-  .pipe(concat('_libs.scss'))
-  .pipe(gulp.dest('app/scss'))
-  .pipe(browserSync.reload({stream:true}))
-})
+// gulp.task('css', function(){
+//   return gulp.scr([
+//     // 'node_modules/normalize.css/normalize.css',
+//     'node_modules/slick-carousel/slick/slick.css',
+//   ])
+//   .pipe(concat('_libs.scss'))
+//   .pipe(gulp.dest('app/scss'))
+//   .pipe(browserSync.reload({stream:true}))
+// })
 function images() {
   return src('app/images/**/*')
     .pipe(imagemin(

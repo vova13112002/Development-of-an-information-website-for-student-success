@@ -3,12 +3,91 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
-
+@import 'import';
 
 
 .header {
-  
+ &__aside{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border-right:1px solid rgba(#fff, .25);
+    height: 100vh;
+    text-align: center;
+    .logo{
+      width: 124px;
+      height: 124px;
+      margin: 0 auto 45px;
+      margin-top: 20px;
+    }
+  }
+  .nav-ico{
+    width: 59px;
+    height: 55px;
+    margin: 0 auto;
+    margin-bottom: 9px;
+  }
+  .menu{
+    &__list-item{
+      text-align: center;
+      margin-bottom: 35px;
+      margin-right: 20px;
+      margin-left: 20px;
+        :hover {
+            color: #52BFFF;
+            transition: all 0.7s;
+            text-shadow: 4px 4px 6px #666;
+          }
+    }
+    &__item-link{
+      color: #eee;
+      font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        text-shadow: 1px 1px 2px #666;
+    
+        
+    }
+    .menu__item-lang{
+      font-size: 24px;
+      line-height: 18px;
+      color:#eee;
+      text-shadow: 1px 1px 2px #666;
+    :hover {
+        color: #52BFFF;
+        transition: all 0.7s;
+        text-shadow: 4px 4px 6px #666;
+      }
+    }
+    &__list-item:last-child{
+      margin-bottom: 60px;
+    }
+    
+  }
+  &__location{
+    text-align: center;
+    font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      color:#eee;
+     display: inline-block;
+     position: relative;
+     padding-left: 19px;
+     &::before{
+      content:"";
+      position: absolute;
+      width: 13px;
+      height: 15px;
+      background-image:url(../images/location.svg);
+      left: 0;
+      top: 0;
+     }
+  }
 }
+
+
+
 .slider-item__info-title{
   text-align: center;
   font-size: 64px;
@@ -23,7 +102,7 @@
 .header__slider {
  
   &-item:nth-child(1) { 
-    background-image: url(../images/bg01.jpeg);
+    background-image: url(../images/background.png);
     height: 100vh;
  
     background-repeat: no-repeat;
@@ -31,7 +110,7 @@
     background-position: center center;
   }
      &-item:nth-child(2) {
-       background-image: url(../images/bg3.jpeg);
+       background-image: url(../images/background2.png);
        height: 100vh;
 
        background-repeat: no-repeat;
