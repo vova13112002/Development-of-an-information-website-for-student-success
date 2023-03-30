@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Development of an information website for student success</title>
+    <title data-lang="home_page-title">Development of an information website for student success</title>
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,12 +27,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   </head>
 
   <body>
     <div class="wrapper">
       <header class="header">
+      
+        
+        <div class="header__arrows">
+          <a class="arrow__down"  href="#" >
+            <img src="images/DownArrows.svg" alt="arrow">
+          </a>
+        </div>
         <!-- <div class="header__slider">
+
+           
         <div class="header__slider-item slider-item">
           <div class="slider-item__info">
             <div class="slider-item__info-title">
@@ -88,51 +98,60 @@
             <ul class="menu__list">
               <li class="menu__list-item">
                 <a class="menu__item-link" href="#">
-                  <img class="nav-ico" src="images/homeWight.png" alt="Home" />
-                  <span>Home</span>
+                  <img class="nav-ico" src="images/home.png" alt="Home" />
+                  <span data-lang="home_page-1">Home</span>
                 </a>
               </li>
               <li class="menu__list-item">
                 <a class="menu__item-link" href="#">
                   <img
                     class="nav-ico"
-                    src="images/booksWhite.png"
+                    src="images/book.png"
                     alt="Education"
                   />
-                  <span>Education</span>
+                  <span data-lang="home_page-2">Education</span>
                 </a>
               </li>
               <li class="menu__list-item">
                 <a class="menu__item-link" href="#">
                   <img
                     class="nav-ico"
-                    src="images/Whitewrite.png"
+                    src="images/write.png"
                     alt="Educational institutions"
                   />
-                  <span>Educational institutions</span>
+                  <span data-lang="home_page-3">Educational institutions</span>
                 </a>
               </li>
               <li class="menu__list-item">
                 <a class="menu__item-link" href="#">
                   <img
                     class="nav-ico"
-                    src="images/globysWhite.png"
+                    src="images/globys.png"
                     alt="Time managment"
                   />
-                  <span>Time management</span>
+                  <span data-lang="home_page-4">Time management</span>
                 </a>
               </li>
           <li class="menu__list-item">
-            <a class="menu__item-lang" href="#">
-             
-            EN
-            </a>
+            <a class="menu__item-lang header__btn" data-btn="en">EN</ф>
+           
+<!--            
+              <button class="header__btn"data-btn="en">
+ 
+                EN </button> -->
+            <!-- </a> -->
+           <!-- <a class="menu__item-lang" href="#" data-btn="en" >   -->
+            
           </li>
-              <li class="menu__list-item">
-                <a class="menu__item-lang" href="#">
+              <li class="menu__list-item"> 
+                <a class="menu__item-lang header__btn" data-btn="ua">UA</a>
+                <!-- <button  class="header__btn"data-btn="ua">  
+                  
               
-              UA
-                </a>
+              UA</button> -->
+              <!-- <a class="menu__item-lang" href="#" > -->
+                <!-- </a> -->
+              
               </li>
               <li class="menu__list-item">
                 <label class="switch">
@@ -149,7 +168,7 @@
                         d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
                       </path>
                     </svg></span>
-                  <input type="checkbox" class="input">
+                  <input  type="checkbox"id="myButton" class="input" onchange="changeTheme(this.checked)">
                   <span class="slider"></span>
                 </label>
               </li>
@@ -165,8 +184,8 @@
       </header>
      
       <main>
-        <!-- <section class="">
-
+        <section class="">
+         
       </section class="">
 
       <section class="">
@@ -175,7 +194,7 @@
 
       <section class="">
 
-      </section class=""> -->
+      </section class="">
       </main>
       <footer></footer>
     </div>

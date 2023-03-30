@@ -7,17 +7,27 @@
 
 
 .header {
+  .arrow__down{
+    display: inline-block;
+      margin: 0 0.5rem;
+
+      animation:fadeInDown ;
+      animation-duration: 3s;
+      /* referring directly to the animation's @keyframe declaration */
+  animation-iteration-count: infinite;
+      /* don't forget to set a duration! */
+  }
  &__aside{
     position: absolute;
     top: 0;
     left: 0;
     z-index: 5;
-    border-right:1px solid rgba(#fff, .25);
+    border-right:3px solid rgba(#fff, .25);
     height: 100vh;
     text-align: center;
     .logo{
-      width: 124px;
-      height: 124px;
+      width: 84px;
+      height: 84px;
       margin: 0 auto 45px;
       margin-top: 20px;
     }
@@ -32,7 +42,7 @@
     &__list-item{
       text-align: center;
       margin-bottom: 35px;
-      margin-right: 20px;
+      margin-right: 2px;
       margin-left: 20px;
         :hover {
             color: #52BFFF;
@@ -43,8 +53,8 @@
     &__item-link{
       color: #eee;
       font-weight: 500;
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 16px;
+        line-height: 18px;
         text-shadow: 1px 1px 2px #666;
     
         
@@ -52,12 +62,14 @@
     .menu__item-lang{
       font-size: 24px;
       line-height: 18px;
-      color:#eee;
+      // color:#eee;
       text-shadow: 1px 1px 2px #666;
+      cursor: pointer;
     :hover {
         color: #52BFFF;
         transition: all 0.7s;
         text-shadow: 4px 4px 6px #666;
+        
       }
     }
     &__list-item:last-child{
@@ -79,14 +91,20 @@
       position: absolute;
       width: 13px;
       height: 15px;
-      background-image:url(../images/location.svg);
+      background-image:url(../images/gps.svg);
       left: 0;
       top: 0;
      }
   }
 }
 
-
+.header__arrows{
+  position: absolute;
+  left: 230px;
+  bottom: 40px;
+  z-index: 3;
+  cursor:pointer;
+}
 
 .slider-item__info-title{
   text-align: center;

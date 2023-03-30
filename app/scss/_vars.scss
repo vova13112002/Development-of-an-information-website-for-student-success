@@ -1,0 +1,45 @@
+:root {
+  --var-bgcolor: #252525;
+  --var-fontcolor: #eee;
+}
+
+:root {
+  --var-bgcolor: #252525;
+  --var-fontcolor: #eee;
+}
+
+[dark] {
+  --var-bgcolor: #eee;
+  --var-fontcolor: #252525;
+}
+
+body {
+  background-color: var(--var-bgcolor);
+  color: var(--var-fontcolor);
+}
+.dark span{
+color: #252525;
+
+}
+.dark a{
+color:#252525;
+}
+html.dark,
+.dark body{
+
+background: #eee;
+color: #252525;
+}
+a{
+  color:#eee;
+}
+
+.dark .menu__item-lang{
+  color:#252525;
+}
+.dark .header__aside{
+  border-right: 3px solid rgba(#000, .25);
+}
+// .dark a {
+//   color: #252525;
+// }
